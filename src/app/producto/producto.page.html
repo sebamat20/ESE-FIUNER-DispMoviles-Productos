@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{producto.nombre}}</ion-title>		   
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  {{producto.precio}}
+  <ion-button (click)="onClick()" expand="block" fill="clear" shape="round">
+    Agregar al carrito
+  </ion-button>
+</ion-content>
