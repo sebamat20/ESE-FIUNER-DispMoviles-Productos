@@ -36,7 +36,7 @@ export class ProductoService {
     {
       return this.productos;
     }
-    public obtenerPorId(id: Number) {
+    public obtenerPorId(id: string) {
     for (let prod of this.productos) {
       if (prod.id == id)
         return prod;
