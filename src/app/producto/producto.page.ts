@@ -22,4 +22,7 @@ export class ProductoPage implements OnInit {
     });
   }
 
+  public agregarCarrito(): void {
+    this.prodSrv.carrito.push(this.producto);
+  }
 }
